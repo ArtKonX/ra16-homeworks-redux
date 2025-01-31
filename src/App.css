@@ -1,0 +1,96 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 60%;
+}
+
+.tasks-container {
+  min-width: 100%;
+}
+
+.form-search {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.task-input {
+  max-width: 60%;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border: none;
+}
+
+
+.tast-price-input {
+  max-width: 23%;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.tast-price-input:focus,
+.task-input:focus {
+  outline: none;
+}
+
+.save-task,
+.task-edit-cancel {
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+}
+
+.save-task {
+  margin: 0 10px;
+}
+
+.task {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.task-text {
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+
+.task-price {
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+
+.tasks-list {
+  padding: 0;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.edit,
+.delete-task {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
