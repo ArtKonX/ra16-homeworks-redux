@@ -5,13 +5,15 @@ const Task = ({ task, tasks }: { task: Task, tasks: Task[] }) => {
 
     const dispatch = useDispatch();
 
+    const index = tasks.findIndex(taskEl => taskEl.id == task.id);
+
     const onEdit = () => {
-        const index = tasks.findIndex(taskEl => taskEl.id == task.id);
         dispatch(edittingTaskService(task.text, Number(task.price), true, index));
     }
 
     const onRemove = () => {
         dispatch(removeTaskService(task.id));
+        dispatch(edittingTaskService('', '', false, 0));
     }
 
     return (
